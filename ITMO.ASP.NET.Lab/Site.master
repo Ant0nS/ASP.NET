@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ITMO.ASP.NET.Lab.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>RSVP</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+<%--    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 50px;
+        }
+        .auto-style3 {
+            width: 200px;
+            height: 150px;
+        }
+        .auto-style4 {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+<%--            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>
+        </div>
+    <table class="auto-style1">
+        <tr>
+            <td colspan="2" class="auto-style2">&nbsp;
+                <h2>RSVP</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;
+                Меню
+            </td>
+            <td class="auto-style4">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="auto-style2">&nbsp;
+                Нижний колонтитул
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
